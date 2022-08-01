@@ -1,0 +1,81 @@
+.card {
+  width: 502px;
+  height: 267px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    258.95deg,
+    rgba(255, 255, 255, 0.128) 19.17%,
+    rgba(255, 255, 255, 0.032) 82.21%
+  );
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(40px);
+  border-radius: 31px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  left: -4.8%;
+  top: 51%;
+}
+
+.content-box {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 100%;
+  height: 43%;
+  right: 0%;
+  left: 5%;
+  top: 7%;
+}
+
+.left-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+  height: 100%;
+  padding: 0px 0px 0px 25px;
+}
+
+.right-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 50%;
+  height: 100%;
+  padding: 0px 0px 0px 258px;
+}
+
+.imgPlaceholder{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgPlaceholder img{
+  margin-right: 3px;
+  height: 80px;
+  width: 80px;
+  background-color: #183942;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.removePlaceholder{
+  position: absolute;
+  top: 0;
+  right: 5%;
+  cursor: pointer;
+}
+

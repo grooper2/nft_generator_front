@@ -1,0 +1,129 @@
+.pageLayout {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.navBar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #022932;
+}
+
+.navMenu {
+  margin-top: 45px;
+  margin-left: 10px;
+  width: 90px;
+  height: 327px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    182.8deg,
+    rgba(255, 255, 255, 0.2) 2.51%,
+    rgba(255, 255, 255, 0.03) 96.18%
+  );
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(40px);
+  border-radius: 56px 0px 0px 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 30px;
+}
+
+.item {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.activeItem1 {
+  position: absolute;
+  width: 8px;
+  height: 35px;
+  z-index: 1;
+  left: 0%;
+  right: 90.79%;
+  top: 21.65%;
+  bottom: 65.6%;
+  background: conic-gradient(
+    from 5.29deg at 45.45% 50.94%,
+    rgba(249, 249, 249, 0.2) 0deg,
+    rgba(255, 255, 255, 0.2) 180deg,
+    #a8eaff 193.12deg,
+    #a8eaff 279.38deg,
+    #a8eaff 352.11deg,
+    rgba(249, 249, 249, 0.2) 360deg
+  );
+  filter: blur(3px);
+}
+
+.activeItem2 {
+  position: absolute;
+  width: 8px;
+  height: 35px;
+  z-index: 1;
+  left: 0%;
+  right: 90.79%;
+  top: 44.65%;
+  bottom: 42.6%;
+  background: conic-gradient(
+    from 5.29deg at 45.45% 50.94%,
+    rgba(249, 249, 249, 0.2) 0deg,
+    rgba(255, 255, 255, 0.2) 180deg,
+    #a8eaff 193.12deg,
+    #a8eaff 279.38deg,
+    #a8eaff 352.11deg,
+    rgba(249, 249, 249, 0.2) 360deg
+  );
+  filter: blur(3px);
+}
+.activeItem3 {
+  position: absolute;
+  width: 8px;
+  height: 35px;
+  z-index: 1;
+  left: 0%;
+  right: 90.79%;
+  top: 67%;
+  bottom: 22%;
+  background: conic-gradient(
+    from 5.29deg at 45.45% 50.94%,
+    rgba(249, 249, 249, 0.2) 0deg,
+    rgba(255, 255, 255, 0.2) 180deg,
+    #a8eaff 193.12deg,
+    #a8eaff 279.38deg,
+    #a8eaff 352.11deg,
+    rgba(249, 249, 249, 0.2) 360deg
+  );
+  filter: blur(3px);
+}
+
+.navFooter {
+  height: 65.55%;
+  display: flex;
+  flex: column;
+  text-align: center;
+}
+
+.navFooter-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pageBody{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 36px 120px 36px 200px;
+}
