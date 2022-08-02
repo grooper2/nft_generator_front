@@ -4,11 +4,11 @@ import { ReactComponent as CardBanner } from "./CardBanner.svg";
 import { ReactComponent as MinusIcon } from "../../Assets/Icons/minus.svg"
 import placeholder from "../../Assets/Images/placeHolder.png";
 
-export default function Card(props) {
+export default function Card({project}) {
   return (
-    <div className="card">
+    <div className="card" key={project.id}>
       <div className="removePlaceholder">
-        <MinusIcon onClick={() => console.log('')}/>
+        <MinusIcon onClick={() => console.log('')} />
       </div>
       <div className="imgPlaceholder">
         <img src={placeholder} alt="projectName" />
@@ -17,12 +17,12 @@ export default function Card(props) {
         <CardBanner />
         <div className="content-box">
           <div className="left-card-content">
-            <h3>Project Title</h3>
-            <p>DD/MM/YYYY</p>
+            <h3>{project.projectTitle}</h3>
+            <p>{project.dateCreated}</p>
           </div>
           <div className="right-card-content">
-            <h3>23 Assets</h3>
-            <p>10000 NFTS</p>
+            <h3>{project.assets} Assets</h3>
+            <p>{project.nfts} NFTS</p>
           </div>
         </div>
       </div>

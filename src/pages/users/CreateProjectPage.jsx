@@ -1,7 +1,7 @@
-import { Flex, Box, Text } from "@chakra-ui/react";
+import { Flex } from "@chakra-ui/react";
 import { Formik, Form } from "formik";
 import React from "react";
-import Button from "../../components/Buttons";
+// import Button from "../../components/Buttons";
 import Card from "../../components/Card";
 import Heading from "../../components/Heading";
 import Layout from "../../Layout/layout";
