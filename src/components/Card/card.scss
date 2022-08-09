@@ -74,11 +74,16 @@
 }
 
 .removePlaceholder{
+  width: 25px;
+  height: 25px;
   position: absolute;
   top: 5%;
   right: 5%;
   cursor: pointer;
   z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay{
@@ -116,6 +121,3 @@
   justify-content: space-around;
 }
 
-.primaryBtn{
-  opacity: '1';
-}

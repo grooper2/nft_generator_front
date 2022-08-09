@@ -7,7 +7,7 @@ import { ReactComponent as DeleteIcon } from "../../Assets/Icons/delete.svg";
 
 import placeholder from "../../Assets/Images/placeHolder.png";
 
-import Button from "../Buttons"
+import Button from "../Buttons";
 
 export default function Card({ project }) {
   const [isDeleting, setDeleting] = useState(false);
@@ -39,10 +39,15 @@ export default function Card({ project }) {
       {isDeleting && (
         <div className="overlay">
           <div className="overlay-content">
-            <h4 style={{ color: '#000' }}>Are you sure you want to remove this project? You are going to lose all your NFT's and Assets</h4>
+            <h4 style={{ color: "#000" }}>
+              Are you sure you want to remove this project? You are going to
+              lose all your NFT's and Assets
+            </h4>
             <div className="btnRow">
               <Button className="closeBtn">Delete</Button>
-              <Button className="primaryBtn">cancel</Button>
+              <Button className="primaryBtn" onClick={() => setDeleting(false)}>
+                cancel
+              </Button>
             </div>
           </div>
         </div>
