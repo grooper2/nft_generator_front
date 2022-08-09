@@ -1,31 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./slider.scss";
 
-export default function Slider(props) {
-    //watch video
-//   const [value, setValue] = useState(null);
+export default function Slider({onChange, type}) {
 
-//   const minWidth = props.type === "width" ? 100 : null;
-//   const maxWidth = props.type === "width" ? 1920 : null;
-//   const minHeight = props.type === "height" ? 100 : null;
-//   const maxHeight = props.type === "height" ? 1080 : null;
-
-//   const handleValue = (e) => {
-//     console.log(e.target.value);
-//     setValue(e.target.value);
-//   };
-
-  return (<></>
-    // <ReactSlider
-    //   className="horizontal-slider"
-    //   thumbClassName="example-thumb"
-    //   trackClassName="example-track"
-    //   onChange={value}
-    //   defaultValue={props.defaultValue}
-    //   value={value}
-    //   min={props.type === "width" ? minWidth : minHeight}
-    //   max={props.type === "width" ? maxWidth : maxHeight}
-    //   renderTrack={(props, state) => <div {...props} />} //custom track
-    // />
+  return (
+    <div className="slider-container">
+      <input type="range" step='20' className="range" min="100"  max={type === 'width' ? '1920' : '1080'} onChange={onChange}/>
+    </div>
   );
 }

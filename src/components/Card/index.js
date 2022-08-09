@@ -1,14 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./card.scss";
+
 import { ReactComponent as CardBanner } from "./CardBanner.svg";
-import { ReactComponent as MinusIcon } from "../../Assets/Icons/minus.svg"
+import { ReactComponent as MinusIcon } from "../../Assets/Icons/minus.svg";
+import { ReactComponent as DeleteIcon } from "../../Assets/Icons/delete.svg";
+
 import placeholder from "../../Assets/Images/placeHolder.png";
 
-export default function Card({project}) {
+import Button from "../Buttons"
+
+export default function Card({ project }) {
+  const [isDeleting, setDeleting] = useState(false);
   return (
     <div className="card" key={project.id}>
       <div className="removePlaceholder">
-        <MinusIcon onClick={() => console.log('')} />
+        {isDeleting ? (
+          <DeleteIcon onClick={() => setDeleting(false)} />
+        ) : (
+          <MinusIcon onClick={() => setDeleting(true)} />
+        )}
       </div>
       <div className="imgPlaceholder">
         <img src={placeholder} alt="projectName" />
@@ -26,6 +36,17 @@ export default function Card({project}) {
           </div>
         </div>
       </div>
+      {isDeleting && (
+        <div className="overlay">
+          <div className="overlay-content">
+            <h4 style={{ color: '#000' }}>Are you sure you want to remove this project? You are going to lose all your NFT's and Assets</h4>
+            <div className="btnRow">
+              <Button className="closeBtn">Delete</Button>
+              <Button className="primaryBtn">cancel</Button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
