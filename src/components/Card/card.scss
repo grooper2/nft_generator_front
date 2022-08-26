@@ -40,7 +40,7 @@
 .left-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   width: 50%;
   height: 100%;
   padding: 0px 0px 0px 25px;
@@ -49,10 +49,10 @@
 .right-card-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-around;
   width: 50%;
   height: 100%;
-  padding: 0px 0px 0px 258px;
+  padding: 0px 0px 0px 140px;
 }
 
 .imgPlaceholder{

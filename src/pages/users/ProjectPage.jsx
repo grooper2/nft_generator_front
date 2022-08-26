@@ -83,7 +83,18 @@ export default function ProjectPage() {
 
   return (
     <Layout activeItem={"activeItem1"}>
-      <Modal onClose={()=> setToggle(false)} show={isOpen} />
+      <div className="pageHeader">
+        <div className="pageTitle">
+          <h2>Projects</h2>
+        </div>
+        <div className="pageButtons">
+          <Button type="button" onClick={() => setToggle(true)}>
+            Create Project
+          </Button>
+        </div>
+      </div>
+      <hr />
+      <Modal onClose={() => setToggle(false)} show={isOpen} />
       {!isLoggedIn ? (
         <>
           <img
@@ -103,15 +114,6 @@ export default function ProjectPage() {
         </>
       ) : (
         <>
-          <div className="pageHeader">
-            <div className="pageTitle">
-              <h2>Projects</h2>
-            </div>
-            <div className="pageButtons">
-              <Button type="button" onClick={() => setToggle(true) }>Create Project</Button>
-            </div>
-          </div>
-          <hr />
           <div className="projects">
             {projects.map((project) => (
               <Card project={project} />
@@ -119,7 +121,6 @@ export default function ProjectPage() {
           </div>
         </>
       )}
-      
     </Layout>
   );
 }

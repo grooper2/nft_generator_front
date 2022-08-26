@@ -1,0 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-offers {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(34, 34, 34, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 900;
+}
+
+.modal-offers-content {
+  width: 1500px;
+  height: 800px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.modal-offers-header {
+  padding: 10px;
+  background: rgba(26, 26, 26);
+}
+
+.modal-offers-title {
+  margin: 0;
+  color: rgba(226, 226, 226);
+}
+
+.modal-offers-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: auto;
+  width: 100%;
+}
+
+.modal-offers-columns {
+  height: 600px;
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.modal-offers-columns {
+  h4 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+  }
+
+  p {
+    height: 200px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+  }
+
+  hr{
+    width: 125px;
+    border: 2px solid #17B0D3;
+  }
+}

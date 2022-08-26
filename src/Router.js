@@ -4,7 +4,7 @@ import LandingPage from './pages/publickPages/LandingPage'
 import LoginPage from './pages/publickPages/LoginPage'
 import RegisterPage from './pages/publickPages/RegisterPage'
 import ProjectPage from './pages/users/ProjectPage'
-import CreateProjectPage from './pages/users/CreateProjectPage'
+import CurrentProjectPage from './pages/users/CurrentProjectPage'
 
 const UserCore = () => {
     return(
@@ -18,7 +18,7 @@ const PublicRouter = () => {
             <LoginPage path="/login" />
             <RegisterPage path="/register" />
             <ProjectPage path="/projects" />
-            <CreateProjectPage path="/create_project" />
+            <CurrentProjectPage path="/current_project" />
             <LandingPage default path="/" />
         </Router>
     )

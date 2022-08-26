@@ -13,11 +13,11 @@ export default function Card({ project }) {
   const [isDeleting, setDeleting] = useState(false);
   return (
     <div className="card" key={project.id}>
-      <div className="removePlaceholder">
+      <div className="removePlaceholder" onClick={() => setDeleting(!isDeleting)}>
         {isDeleting ? (
-          <DeleteIcon onClick={() => setDeleting(false)} />
+          <DeleteIcon />
         ) : (
-          <MinusIcon onClick={() => setDeleting(true)} />
+          <MinusIcon />
         )}
       </div>
       <div className="imgPlaceholder">
