@@ -22,8 +22,6 @@ export default function FileUploadModal(props) {
     });
   }, []);
 
-  console.log('images', images)
-
   if (!props.show) {
     return null;
   }
