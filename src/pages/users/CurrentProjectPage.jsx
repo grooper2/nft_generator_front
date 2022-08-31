@@ -28,7 +28,7 @@ export default function CurrentProjectPage() {
           </div>
         </div>
         <div className="pageButtons">
-          <Button type="button">View Assets</Button>
+          <Button type="button" onClick={() => ''}>View Assets</Button>
           <Button type="button" onClick={() => toggleOffer(true)}>Generate NFT's</Button>
         </div>
       </div>

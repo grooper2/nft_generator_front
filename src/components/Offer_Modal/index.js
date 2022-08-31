@@ -31,10 +31,10 @@ export default function OfferModal(props) {
             </Button>
           </div>
           <div className="modal-offers-columns">
-            <h4>100 NFT's Free</h4>
+            <h4>1,000 NFT's Free</h4>
             <hr></hr>
             <p>
-              Generate 1000 NFT’s for £50. This option will always be available
+              Generate 1,000 NFT’s for £50. This option will always be available
               at any time.
             </p>
             <br />
@@ -43,10 +43,10 @@ export default function OfferModal(props) {
             </Button>
           </div>
           <div className="modal-offers-columns">
-            <h4>100 NFT's Free</h4>
+            <h4>10,000 NFT's Free</h4>
             <hr></hr>
             <p>
-              Generate 10000 NFT’s for £399. This option will always be
+              Generate 10,000 NFT’s for £399. This option will always be
               available at any time.
             </p>
             <br />
