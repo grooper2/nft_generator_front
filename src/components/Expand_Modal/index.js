@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./expandModal.scss";
 
 import placeholder from "../../Assets/Images/placeHolder.png";
 import Button from "../Buttons";
 
 export default function ExpandModal(props) {
-  const [width, setWidth] = useState(100);
-  const [height, setHeight] = useState(100);
 
   if (!props.show) {
     return null;
   }
-
-  const onChangeWidth = (e) => {
-    setWidth(e.target.value);
-  };
-  const onChangeHeight = (e) => {
-    setHeight(e.target.value);
-  };
 
   return (
     <div className="modal-expand" onClick={props.onClose}>

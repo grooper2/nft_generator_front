@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./modal.scss";
 
 import Slider from "../Inputs/Slider";

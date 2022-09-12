@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./nft_card.scss";
 
 import placeholder from "../../Assets/Images/placeHolder.png";

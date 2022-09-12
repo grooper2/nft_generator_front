@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./offerModal.scss";
 
 import Button from "../Buttons";

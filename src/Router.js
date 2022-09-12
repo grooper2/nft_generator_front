@@ -21,7 +21,7 @@ const PublicRouter = () => {
             <ProjectPage path="/projects" />
             <CurrentProjectPage path="/current_project" />
             <AssetsPage path="/assets" />
-            <LandingPage default path="/" />
+            <LandingPage path="/" />
         </Router>
     )
 }

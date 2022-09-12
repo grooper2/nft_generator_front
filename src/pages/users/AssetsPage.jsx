@@ -1,15 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from '@reach/router'
 
 import Layout from "../../Layout/layout";
 import "./AssetsPage.scss";
 
 import Button from "../../components/Buttons";
 import NftCard from "../../components/NftCard";
+import OfferModal from "../../components/Offer_Modal";
+import FileUploadModal from "../../components/File_Upload_Modal";
 
 import { ReactComponent as BackArrow } from "../../Assets/Icons/back_arrow.svg";
-import OfferModal from "../../components/Offer_Modal";
-import { useEffect } from "react";
-import FileUploadModal from "../../components/File_Upload_Modal";
 
 export default function AssetsPage() {
   const [isToggled, toggleOffer] = useState(false);
@@ -63,7 +63,7 @@ export default function AssetsPage() {
           <div className="titleSection">
             <div className="navigator">
               <BackArrow />
-              <a href=""> Back to generated NFT's</a>
+              <Link to="/current_project"> Back to generated NFT's</Link>
             </div>
             <h2>Cyber Chef's</h2>
             <h4>Total Assets: 300</h4>

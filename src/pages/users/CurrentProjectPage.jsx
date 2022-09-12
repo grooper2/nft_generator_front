@@ -8,12 +8,13 @@ import NftCard from "../../components/NftCard";
 import ExpandModal from "../../components/Expand_Modal";
 import OfferModal from "../../components/Offer_Modal";
 
-import {ReactComponent as BackArrow} from "../../Assets/Icons/back_arrow.svg"
+import { ReactComponent as BackArrow } from "../../Assets/Icons/back_arrow.svg";
 
 export default function CurrentProjectPage() {
   const [isOpen, setToggle] = useState(false);
   const [isToggled, toggleOffer] = useState(false);
   const nfts = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
+
   return (
     <Layout activeItem={"activeItem1"}>
       <div className="pageHeader">
@@ -28,12 +29,14 @@ export default function CurrentProjectPage() {
           </div>
         </div>
         <div className="pageButtons">
-          <Button type="button" onClick={() => ''}>View Assets</Button>
-          <Button type="button" onClick={() => toggleOffer(true)}>Generate NFT's</Button>
+          <Button type="button">View Assets</Button>
+          <Button type="button" onClick={() => toggleOffer(true)}>
+            Generate NFT's
+          </Button>
         </div>
       </div>
       <hr />
-      <OfferModal onClose={() => toggleOffer(false)} show={isToggled}/>
+      <OfferModal onClose={() => toggleOffer(false)} show={isToggled} />
       <ExpandModal onClose={() => setToggle(false)} show={isOpen} />
       <div className="nfts">
         {nfts.map((nft) => (
